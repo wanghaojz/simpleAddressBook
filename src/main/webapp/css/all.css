@@ -1,0 +1,134 @@
+body {
+  background: #F7F7F7;
+}
+.container {
+  width: 800px;
+  box-shadow: 1px 1px 23px 3px #504D4D;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.ContactView .contact-form {
+  border: 1px solid #EEE6E6;
+  border-radius: 21px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.ContactView .contact-form input[type="text"] {
+  width: 49%;
+  display: inline-block;
+}
+.ContactView .contact-form .name {
+  margin-right: 10px;
+}
+.ContactView .contact-update-form {
+  border-top: 1px solid #EEE6E6;
+  padding: 10px;
+  margin-right: -30px;
+}
+.ContactView .contact-update-form input[type="text"] {
+  width: 49%;
+  display: inline-block;
+}
+.ContactView .contact-update-form .name {
+  margin-right: 10px;
+}
+.ContactView .add {
+  float: right;
+}
+.ContactView .items {
+  border-bottom: solid 1px #ddd;
+}
+.ContactView .items .remove {
+  float: right;
+  margin-top: 19px;
+  right: -50px;
+  cursor: pointer;
+  color: #F08989;
+  font-size: 20px;
+}
+.ContactView .items .edit {
+  float: right;
+  margin-top: 19px;
+  right: -45px;
+  cursor: pointer;
+  color: #5CB3F6;
+  font-size: 20px;
+}
+.ContactView .item {
+  border: solid 1px #ddd;
+  border-bottom: none;
+  min-height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+  padding-right: 55px;
+}
+.ContactView .item .group {
+  color: #83C2E6;
+  word-break: break-word;
+}
+
+.GroupView .group-form {
+  border: 1px solid #EEE6E6;
+  border-radius: 21px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.GroupView .group-form input[type="text"] {
+  width: 90%;
+  display: inline-block;
+}
+.GroupView .group-form .name {
+  margin-right: 10px;
+}
+.GroupView .group-update-form {
+  border-top: 1px solid #EEE6E6;
+  padding: 10px;
+  margin-right: -30px;
+}
+.GroupView .group-update-form input[type="text"] {
+  width: 78%;
+  display: inline-block;
+}
+.GroupView .group-update-form .name {
+  margin-right: 10px;
+}
+.GroupView .add {
+  float: right;
+}
+.GroupView .items {
+  border-bottom: solid 1px #ddd;
+}
+.GroupView .items .remove {
+  float: right;
+  margin-top: 7px;
+  right: -27px;
+  cursor: pointer;
+  color: #F08989;
+}
+.GroupView .items .edit {
+  float: right;
+  margin-top: 7px;
+  right: -20px;
+  cursor: pointer;
+  color: #5CB3F6;
+}
+.GroupView .item {
+  border: solid 1px #ddd;
+  border-bottom: none;
+  min-height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+  padding-right: 35px;
+}
+
+.MainView .title {
+  text-align: center;
+  text-shadow: 3px 3px 2px #cccccc;
+}
+.MainView .content {
+  margin-top: 15px;
+}
+

@@ -1,0 +1,68 @@
+<script id="tmpl-ContactView" type="text/html">
+    <div class="ContactView">
+      <div class="contact-form">
+          <h3>Add Contact</h3>
+          <div class="form-group">
+              <input type="text" placeholder="contactName" class="name form-control">
+              <input type="text" placeholder="age" class="age form-control">
+
+          </div>
+          <div class="form-group">
+              <textarea class="form-control address" placeholder="Address"></textarea>
+          </div>
+          <div class="form-group">
+              Groups:
+             {{#each result}}
+              <label><input type="checkbox" name="group" value="{{id}}"/> {{name}}</label>
+             {{/each}}
+          </div>
+          <div class="form-group clearfix">
+                <input type="button" class="btn btn-primary add" value="Add"/>
+          </div>
+      </div>
+
+      <h3>Contact List</h3>
+      <div class="list">
+
+      </div>
+    </div>
+</script>
+
+
+<script id="tmpl-contactList" type="text/html">
+    <div class="items">
+        {{# each result}}
+        <div class="item" data-id="{{id}}">
+            {{name}} -- (age: {{age}}, address: {{address}})
+            <i class="glyphicon glyphicon-remove-circle remove"></i>
+            <i class="glyphicon glyphicon-edit edit"></i>
+            <div class="group">Groups:&nbsp;&nbsp;&nbsp;{{#if groups.length}}{{groups}}{{else}}No Group{{/if}}</div>
+        </div>
+        {{/each}}
+    </div>
+</script>
+
+
+<script id="tmpl-contactUpdate" type="text/html">
+    <div class="contact-update-form" data-id="{{contact.id}}">
+        <h3>Update Contact</h3>
+        <div class="form-group">
+            <input type="text" placeholder="contactName" value="{{contact.name}}" class="name form-control">
+            <input type="text" placeholder="age" value="{{contact.age}}" class="age form-control">
+
+        </div>
+        <div class="form-group">
+            <textarea class="form-control address" placeholder="Address">{{contact.address}}</textarea>
+        </div>
+        <div class="form-group">
+            Groups:
+            {{#each groups}}
+            <label><input type="checkbox" name="group" value="{{id}}" {{checked}}/> {{name}}</label>
+            {{/each}}
+        </div>
+        <div class="form-group clearfix">
+            <input type="button" class="btn btn-primary update" value="Update"/>
+            <input type="button" class="btn btn-primary cancel" value="Cancel"/>
+        </div>
+    </div>
+</script>

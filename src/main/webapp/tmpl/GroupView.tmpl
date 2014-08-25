@@ -1,0 +1,43 @@
+<script id="tmpl-GroupView" type="text/html">
+    <div class="GroupView">
+        <div class="group-form">
+            <h3>Add Group</h3>
+            <div class="form-group">
+                <input type="text" placeholder="groupName" class="name form-control">
+                <input type="button" class="btn btn-primary add" value="Add"/>
+            </div>
+
+        </div>
+
+        <h3>Group List</h3>
+        <div class="list">
+
+        </div>
+    </div>
+</script>
+
+
+<script id="tmpl-groupList" type="text/html">
+    <div class="items">
+        {{# each result}}
+        <div class="item" data-id="{{id}}">
+            {{name}}
+
+            <i class="glyphicon glyphicon-remove-circle remove"></i>
+            <i class="glyphicon glyphicon-edit edit"></i>
+        </div>
+        {{/each}}
+    </div>
+</script>
+
+
+<script id="tmpl-groupUpdate" type="text/html">
+    <div class="group-update-form" data-id="{{id}}">
+        <h3>Update Group</h3>
+        <div class="form-group">
+            <input type="text" placeholder="groupName" value="{{name}}" class="name form-control">
+            <input type="button" class="btn btn-primary update" value="Update"/>
+            <input type="button" class="btn btn-primary cancel" value="Cancel"/>
+        </div>
+    </div>
+</script>
